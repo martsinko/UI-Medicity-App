@@ -6,7 +6,9 @@ import '../../../../../../constans/app_strings.dart';
 import 'my_blood.dart';
 
 class BloodPage extends StatefulWidget {
-  const BloodPage({Key? key}) : super(key: key);
+  const BloodPage({Key? key, required this.pageController}) : super(key: key);
+
+      final PageController pageController;
 
   @override
   State<BloodPage> createState() => _BloodPageState();
@@ -92,14 +94,26 @@ class _BloodPageState extends State<BloodPage> {
             ),
             SizedBox(height: screenHeight / 6),
             Center(
-              child: SizedBox(
+              child: Container(
+                decoration: BoxDecoration(
+                    borderRadius: BorderRadius.circular(10),
+                    boxShadow: const [
+                      BoxShadow(
+                        color: Color.fromARGB(255, 228,221,234),
+                        offset: Offset(0.0, 3.5),
+                        blurRadius: 1,
+
+                      )
+                    ]
+                  ),
                 width: screenWidth * 0.9,
                 height: screenHeight / 16,
                 child: ElevatedButton(
-                  onPressed: () {},
+                  onPressed: () {
+                     widget.pageController.jumpToPage(3);
+                  },
                   style: ElevatedButton.styleFrom(
-                    elevation: 4,
-                    shadowColor: colorWhite,
+                    shadowColor: Color.fromARGB(255, 228,221,234),
                     backgroundColor: colorWhite,
                     shape: RoundedRectangleBorder(
                       borderRadius: BorderRadius.circular(10), 

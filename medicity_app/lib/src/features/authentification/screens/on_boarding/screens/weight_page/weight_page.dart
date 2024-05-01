@@ -5,11 +5,13 @@ import 'package:google_fonts/google_fonts.dart';
 import 'package:medicity_app/src/constans/app_color.dart';
 import 'package:medicity_app/src/constans/app_strings.dart';
 import 'package:medicity_app/src/features/authentification/screens/on_boarding/screens/height_page/height_cm.dart';
-
 import 'weight_kg.dart';
 
 class WeightPage extends StatefulWidget {
-  const WeightPage({super.key});
+  const WeightPage({super.key, required this.pageController});
+
+  
+  final PageController pageController;
 
   @override
   State<WeightPage> createState() => _WeightPageState();
@@ -31,6 +33,7 @@ class _WeightPageState extends State<WeightPage> {
         child: Column(
           mainAxisAlignment: MainAxisAlignment.start,
           children: [
+            
                 Padding(
                   padding:  EdgeInsets.only(top: screenHeight / 9, right: screenWidth / 3.5),
                   child: Text(weight, style: GoogleFonts.rubik(fontSize: 30, fontWeight: FontWeight.w900, color: colorWhite),),
@@ -55,8 +58,7 @@ class _WeightPageState extends State<WeightPage> {
                     ),
                   ),
                   Row(
-                    children: [
-                      
+                    children: [ 
                       Expanded(
                         child: Padding(
                           padding: EdgeInsets.only(left: screenWidth / 3),
@@ -100,15 +102,27 @@ class _WeightPageState extends State<WeightPage> {
               ),  
             SizedBox( height:  screenHeight / 6),
               Center(
-                 child: SizedBox(
+                 child: Container(
+                  decoration: BoxDecoration(
+                    borderRadius: BorderRadius.circular(10),
+                    boxShadow: const [
+                      BoxShadow(
+                        color: Color.fromARGB(255, 228,221,234),
+                        offset: Offset(0.0,4.5),
+                        blurRadius: 1,
+                       // spreadRadius: 1
+                      )
+                    ]
+                  ),
                     width: screenWidth * 0.9,
                     height: screenHeight / 16  ,
-                    child: ElevatedButton(
-                      
-                      onPressed: (){}, 
-                      style: ElevatedButton.styleFrom(
-                        elevation: 4, 
-                        shadowColor: Colors.grey,
+                    child: ElevatedButton(                     
+                      onPressed: (){
+                        widget.pageController.jumpToPage(2);
+                      }, 
+                      style: ElevatedButton.styleFrom( 
+                        
+                        shadowColor: Color.fromARGB(255, 228,221,234) ,
                         backgroundColor: colorWhite,
                         shape: RoundedRectangleBorder(
                           borderRadius: BorderRadius.circular(10)

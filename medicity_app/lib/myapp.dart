@@ -3,14 +3,15 @@ import 'package:medicity_app/src/features/authentification/screens/enter_name_pa
 import 'package:medicity_app/src/features/authentification/screens/loading_page/loading_page.dart';
 import 'package:medicity_app/src/features/authentification/screens/on_boarding/screens/height_page/height_page.dart';
 import 'package:medicity_app/src/features/authentification/screens/on_boarding/screens/on_boarding_page.dart';
+import 'package:medicity_app/src/features/authentification/screens/on_boarding/screens/weight_page/weight_page.dart';
 import 'package:medicity_app/src/features/authentification/screens/on_boarding/screens/years_page/years_page.dart';
 import 'package:medicity_app/src/features/authentification/screens/pin_code_page/pin_code_page.dart';
 import 'package:medicity_app/src/features/authentification/screens/sign_up_page/sign_up_page.dart';
 
 class MyApp extends StatelessWidget {
-  const MyApp({super.key});
+   MyApp({super.key});
 
-  // This widget is the root of your application.
+final PageController pageController = PageController();
   @override
   Widget build(BuildContext context) {
     return MaterialApp(

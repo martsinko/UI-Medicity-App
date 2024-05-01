@@ -19,14 +19,14 @@ class MyHeight extends StatelessWidget {
     bool isSelected = value == selectedValue;
     int index = values.indexOf(value);
     int diff = (values.indexOf(selectedValue) - index).abs();
-    int fontSize = isSelected ? 44 : 42 - (diff * 10);
-    fontSize = fontSize < 20 ? 20 : fontSize;
+    int fontSize = isSelected ? 30 : 54 - (diff * 20);
+    fontSize = fontSize < 34 ? 30 : fontSize;
     // Ensure font size is non-negative
 
-    Color textColor = isSelected ? backgrColorHeightPage : Colors.black; // Custom colors for selected and unselected items
+    Color textColor = isSelected ? backgrColorHeightPage : Colors.grey; // Custom colors for selected and unselected items
     if (!isSelected) {
-      int colorValue = 255 - (diff * 28);
-      textColor = Color.fromRGBO(colorValue, colorValue, colorValue, 0.8);
+      int colorValue = 255 - (diff * 16);
+      textColor = Color.fromRGBO(colorValue, colorValue, colorValue, 0.58);
     }
 
     return Center(

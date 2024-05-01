@@ -14,8 +14,6 @@ class LoadingPage extends StatefulWidget {
   State<LoadingPage> createState() => _LoadingPageState();
 }
 
-
-
 class _LoadingPageState extends State<LoadingPage>  with TickerProviderStateMixin {
 
   late AnimationController controller;
@@ -70,7 +68,7 @@ class _LoadingPageState extends State<LoadingPage>  with TickerProviderStateMixi
                   borderRadius: BorderRadius.circular(13),
                   minHeight: screenHeight / 38,
                   value: controller.value,
-                 valueColor: AlwaysStoppedAnimation<Color>(backgrColorWeightPage),
+                 valueColor: AlwaysStoppedAnimation<Color>(backgrColorLoading),
                   backgroundColor: backgrColorLoading,
                 ),
               )

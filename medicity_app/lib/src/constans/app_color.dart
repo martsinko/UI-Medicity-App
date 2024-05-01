@@ -18,7 +18,8 @@ const Color backgrColorHeightPage = Color.fromARGB(255, 67,194,254);
 const Color backgrColorWeightPage = Color.fromARGB(255, 255,177,3);
 const Color backgrColorBloodPage = Color.fromARGB(255, 218,55,103);
 const Color backgrColorYearsPage = Color.fromARGB(255, 119, 201, 0);
-const Color backgrColorLoading = Color.fromARGB(255, 157, 94, 199);
+const Color backgrColorLoading = Color.fromARGB(255, 255, 173, 0);
+
 
 //pin_code_page
 const Color backgrColorNumButt = Color.fromARGB(255, 220,167,255);

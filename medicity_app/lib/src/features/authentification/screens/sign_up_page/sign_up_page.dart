@@ -1,5 +1,6 @@
 import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
+import 'package:flutter/rendering.dart';
 import 'package:flutter/widgets.dart';
 import 'package:google_fonts/google_fonts.dart';
 import 'package:medicity_app/src/constans/app_color.dart';
@@ -72,14 +73,24 @@ class SignUpPage extends StatelessWidget {
                   height: screenHeight / 20,
                 ),
 
-                SizedBox(
+                Container(
+                  decoration: BoxDecoration(
+                    borderRadius: BorderRadius.circular(10),
+                    boxShadow: const [
+                      BoxShadow(
+                        color: Color.fromARGB(255, 187, 112, 25),
+                        offset: Offset(0.0, 4.5),
+                        blurRadius: 1,
+                        
+
+                      )
+                    ]
+                  ),
                   width: screenWidth * 0.9,
                   height: screenHeight / 16  ,
                   child: ElevatedButton(
                     onPressed: (){}, 
                     style: ElevatedButton.styleFrom(
-                      elevation: 5, 
-                      shadowColor: appleShadowColor,
                       backgroundColor: appleButColor,
                       shape: RoundedRectangleBorder(
                         borderRadius: BorderRadius.circular(10)
@@ -97,15 +108,25 @@ class SignUpPage extends StatelessWidget {
                   SizedBox(
                   height: screenHeight / 80,
                 ),
-                   SizedBox(
+                   Container(
+                     decoration: BoxDecoration(
+                    borderRadius: BorderRadius.circular(10),
+                    boxShadow: const [
+                      BoxShadow(
+                        color: Color.fromARGB(255, 29, 144, 203,),
+                        offset: Offset(0.0, 4),
+                        blurRadius: 1,
+                        
+
+                      )
+                    ]
+                  ),
                   width: screenWidth * 0.9,
                   height: screenHeight / 16  ,
                   child: ElevatedButton(
                     onPressed: (){}, 
                     style: ElevatedButton.styleFrom(
                       backgroundColor: facebookButColor,
-                      elevation: 5,
-                      shadowColor: facebookShadowColor,
                       shape: RoundedRectangleBorder(
                         borderRadius: BorderRadius.circular(10)
                       )
@@ -121,17 +142,27 @@ class SignUpPage extends StatelessWidget {
                 ),
 
                       SizedBox(
-                  height: screenHeight / 80,
+                  height: screenHeight / 70,
                 ),
 
-                 SizedBox(
+                 Container(
+                  decoration: BoxDecoration(
+                    borderRadius: BorderRadius.circular(10),
+                    boxShadow: const [
+                      BoxShadow(
+                        color: Color.fromARGB(255, 199, 45, 93),
+                        offset: Offset(0.0, 4),
+                        blurRadius: 1,
+                        
+
+                      )
+                    ]
+                  ),
                   width: screenWidth * 0.9,
                   height: screenHeight / 16  ,
                   child: ElevatedButton(
                     onPressed: (){}, 
                     style: ElevatedButton.styleFrom(
-                      elevation: 5, 
-                      shadowColor: googleShadowColor,
                       backgroundColor: googleButColor,
                       shape: RoundedRectangleBorder(
                         borderRadius: BorderRadius.circular(10)
