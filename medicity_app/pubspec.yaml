@@ -74,10 +74,19 @@ flutter:
      - assets/logo/apple.png
      - assets/logo/face.png
      - assets/logo/backspace.png
+     - assets/logo/alarm.png
+     - assets/logo/doctor.png
+     - assets/logo/calendar.png
      - assets/images/enternameimg.png
      - assets/images/sova.png
      - assets/images/sova2.png
      - assets/images/forsova2.png
+     - assets/images/medical.png
+     - assets/images/proctolog.png
+     - assets/images/gin.png
+     - assets/images/zyb.png
+     - assets/images/stethoscope.png
+     - assets/images/heart.png
     
 
 
