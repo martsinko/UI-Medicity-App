@@ -26,3 +26,12 @@
 
     //pin_code_page
     const String enterCode = 'Введите код для входа';
+
+    //home_page
+    const String plan = 'План на сегодня';
+    const String dontPlan = 'У вас нету планов';
+     const String deckPlan = 'Чтобы были планы, Вам \nнужно пройтись по врачам и \nсдать анализы.';
+    const String selectDoc = 'Выбрать врача';
+    
+    
+
